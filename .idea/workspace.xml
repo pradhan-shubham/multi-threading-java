@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85585656-3f26-46c0-9640-4c8697e6eb1b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/basicMultiThreading/DaemonThread.java" afterDir="false" />
+    <list default="true" id="85585656-3f26-46c0-9640-4c8697e6eb1b" name="Changes" comment="Added daemon thread demo">
+      <change afterPath="$PROJECT_DIR$/src/threadSynchronization/Synchronization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadSynchronization/SynchronizeWithLock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/threadSynchronization/WaitAndNotify.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,9 @@
     "Application.JoinThread.executor": "Run",
     "Application.Main.executor": "Run",
     "Application.RunnableThread.executor": "Run",
+    "Application.Synchronization.executor": "Run",
+    "Application.SynchronizeWithLock.executor": "Run",
+    "Application.WaitAndNotify.executor": "Run",
     "Application.sequential.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
@@ -62,35 +66,9 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DaemonThread">
+  <component name="RunManager" selected="Application.WaitAndNotify">
     <configuration name="DaemonThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="basicMultiThreading.DaemonThread" />
-      <module name="multi-threading-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basicMultiThreading.DaemonThread" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ExtendThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basicMultiThreading.ExtendThread" />
-      <module name="multi-threading-java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="basicMultiThreading.DaemonThread" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="JoinThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basicMultiThreading.JoinThread" />
       <module name="multi-threading-java" />
       <extension name="coverage">
         <pattern>
@@ -109,12 +87,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RunnableThread" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="basicMultiThreading.RunnableThread" />
+    <configuration name="Synchronization" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadSynchronization.Synchronization" />
       <module name="multi-threading-java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="basicMultiThreading.DaemonThread" />
+          <option name="PATTERN" value="threadSynchronization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SynchronizeWithLock" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadSynchronization.SynchronizeWithLock" />
+      <module name="multi-threading-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="threadSynchronization.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WaitAndNotify" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="threadSynchronization.WaitAndNotify" />
+      <module name="multi-threading-java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="threadSynchronization.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,11 +128,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.WaitAndNotify" />
+        <item itemvalue="Application.SynchronizeWithLock" />
+        <item itemvalue="Application.Synchronization" />
         <item itemvalue="Application.DaemonThread" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.JoinThread" />
-        <item itemvalue="Application.ExtendThread" />
-        <item itemvalue="Application.RunnableThread" />
       </list>
     </recent_temporary>
   </component>
@@ -148,8 +152,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722344195738</updated>
-      <workItem from="1722344196704" duration="10223000" />
+      <workItem from="1722344196704" duration="12302000" />
     </task>
+    <task id="LOCAL-00001" summary="Added daemon thread demo">
+      <option name="closed" value="true" />
+      <created>1722862104759</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722862104759</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,6 +178,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added daemon thread demo" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added daemon thread demo" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
